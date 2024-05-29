@@ -247,24 +247,48 @@ body {
   margin-right: 5px;
 }
 
+.img_zoom {
+  transition: all 0.1s ease;
+}
+
+.img_zoom:active {
+  transform: scale(1.8);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
+}
+
+.accordion-item-div__btn:hover {
+  background-color: whitesmoke;
+  color: black;
+  border: solid 1px #DD3330;
+}
+
 .accordion-img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 .accordion-img div {
   display: flex;
   flex-direction: column;
 }
 .accordion-img div q {
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
+  justify-content: center;
 }
 .accordion-img div button {
   width: 150px;
   height: 30px;
   border-radius: 5px;
   margin-left: 65px;
+  justify-content: center;
+}
+.accordion-img .bot-agregar:hover {
+  transform: scale(1.3);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
 }
 
 /* ======Estilos Main Foro====== */
@@ -290,19 +314,11 @@ nav a:hover {
   height: 35vh;
 }
 
-.main-foro_imag__fondo {
-  position: absolute;
-  width: 100%;
-  height: 160%;
-  background-size: cover;
-  opacity: 0.2;
-} 
-
 .container {
   width: 80%;
   margin: 20px auto;
   padding: 20px;
-  background-color: whitesmoke;
+  background-color: lightgray;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -311,7 +327,7 @@ nav a:hover {
   margin-bottom: 20px;
 }
 .categorias h2 {
-  background-color: grey;
+  background-color: gray;
   padding: 10px;
   margin: 0;
   border-radius: 5px 5px 0 0;
@@ -508,7 +524,36 @@ nav a:hover {
   .light-box:target {
     transform: scale(1);
   }
-  /*====Foro====*/
+  /*====Productos====*/
+  .accordion-item-div {
+    justify-content: space-around;
+  }
+  .accordion-item-div__btn {
+    text-align: center;
+    margin: 15px;
+    width: 8%;
+    border-radius: 3px;
+  }
+  .accordion-item-div svg {
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+  .img_zoom {
+    transition: all 0.1s ease;
+  }
+  .img_zoom:active {
+    transform: scale(1.6);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 5%;
+  }
+  .accordion-img div q {
+    font-size: 90%;
+  }
+  .accordion-img button {
+    width: 80%;
+    height: 80%;
+  }
 }
 @media only screen and (min-width: 481px) and (max-width: 991px) {
   /*====Inicio====*/
@@ -640,7 +685,45 @@ nav a:hover {
     object-fit: cover;
     border-radius: 10px;
   }
+  /*====Productos====*/
+  .accordion-item-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .accordion-item-div__btn {
+    text-align: center;
+    width: 2%;
+    border-radius: 3px;
+  }
+  .accordion-item-div svg {
+    margin-left: 40px;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  .img_zoom {
+    transition: all 0.1s ease;
+  }
+  .img_zoom:active {
+    transform: scale(1.4);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 5%;
+  }
+  .accordion-img div q {
+    font-size: 90%;
+  }
+  .accordion-img button {
+    width: 80%;
+    height: 80%;
+  }
   /*====Foro====*/
+  nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: small;
+  }
   /*====Footer====*/
   .footer-container__contactos div {
     display: flex;
@@ -705,6 +788,7 @@ nav a:hover {
   }
   /*====Biografia====*/
   /*====Discografia====*/
+  /*====Productos====*/
   /*====Foro====*/
   /*====Footer====*/
 }
@@ -801,6 +885,62 @@ nav a:hover {
     max-height: 100%;
     object-fit: cover;
     border-radius: 10px;
+  }
+  .accordion-item-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .accordion-item-div__btn {
+    text-align: center;
+    width: 2%;
+    border-radius: 3px;
+  }
+  .accordion-item-div svg {
+    margin-left: 40px;
+    margin-top: 5px;
+    margin-right: 1px;
+  }
+  .img_zoom {
+    transition: all 0.2s ease;
+  }
+  .img_zoom:active {
+    transform: scale(1.2);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 5%;
+  }
+  .accordion-img div q {
+    font-size: 70%;
+  }
+  .accordion-img button {
+    width: 40%;
+    height: 40%;
+    margin-left: 10px;
+    justify-content: center;
+  }
+  .bot-agregar:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+  }
+  nav a {
+    font-size: x-small;
+  }
+  .container {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h2 {
+    font-size: small;
+  }
+  h3 {
+    font-size: x-small;
+  }
+  p {
+    font-size: small;
   }
   .footer-container {
     position: absolute;

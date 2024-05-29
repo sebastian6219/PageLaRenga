@@ -93,8 +93,46 @@
         transform: scale(1);
     }
 
-    /*====Foro====*/
+    /*====Productos====*/
 
+    .accordion-item-div {
+        justify-content: space-around;
 
-    
+        &__btn {
+            text-align: center;
+            margin: 15px;
+            width: 8%;
+            border-radius: 3px;
+        }
+
+        svg {
+            margin-left: 15px;
+            margin-top: 10px;
+            margin-right: 5px;
+        }
+    }
+
+    .img_zoom {
+        transition: all 0.1s ease;
+    }
+
+    .img_zoom:active {
+        transform: scale(1.6);
+        box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+        border-radius: 5%;
+    }
+
+    .accordion-img {
+        div {
+            q {
+                font-size: 90%;
+            }
+        }
+
+        button {
+            width: 80%;
+            height: 80%;
+        }
+    }
+
 }
