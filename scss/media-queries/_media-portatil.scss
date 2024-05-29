@@ -96,12 +96,12 @@
     /*====Productos====*/
 
     .accordion-item-div {
-        justify-content: space-around;
+        justify-content: flex-end;
 
         &__btn {
             text-align: center;
             margin: 15px;
-            width: 8%;
+            width: 10%;
             border-radius: 3px;
         }
 

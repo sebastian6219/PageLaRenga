@@ -8,9 +8,11 @@ body {
 
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: $bgc-header;
 
 }
+
+
 
 .header-container_logo img {
 
@@ -25,7 +27,20 @@ body {
     margin-right: 25px;
     margin-top: 15px;
 
+    &--nav {
+        padding: 0;
+        background-color: $rojo-larenga;
+        margin-top: 2%;
+        border-radius: 15%;
+    }
+
 }
+
+.nav-link_active {
+    color: whitesmoke;
+    font-size: 1rem;
+}
+
 
 
 .navbar-toggler {

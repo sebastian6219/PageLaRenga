@@ -1,5 +1,21 @@
 /* ======Estilos Main Productos====== */
 
+
+.main_productos {
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 100px);
+}
+
+.div-contenedor {
+
+    grid-column: 1/13;
+    grid-row: 1/20;
+
+}
+
+
 .accordion-item-div {
     display: flex;
     flex-direction: row;

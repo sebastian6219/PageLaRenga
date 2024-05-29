@@ -3,10 +3,10 @@
 nav {
     display: flex;
     justify-content: center;
-    background-color: #DD3330;
+    background-color: $rojo-larenga;
 
     a {
-        color: white;
+        color: whitesmoke;
         padding: 14px 20px;
         text-decoration: none;
         text-align: center;
@@ -125,7 +125,7 @@ nav {
 
 .formulario button {
     position: sticky;
-    background-color: #DD3330;
+    background-color: $rojo-larenga;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -136,5 +136,5 @@ nav {
 .formulario button:hover {
     background-color: whitesmoke;
     color: black;
-    border: solid 1px #DD3330;
+    border: solid 1px $rojo-larenga;
 }

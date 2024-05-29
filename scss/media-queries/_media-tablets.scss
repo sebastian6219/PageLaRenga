@@ -1,5 +1,31 @@
 @media only screen and (min-width: 481px) and (max-width: 991px) {
 
+.navbar-toggler-icon{
+    background-color: whitesmoke;
+    border-radius: 20%;
+    
+}
+
+    .header-container__buscador {
+
+        &--nav {
+
+            background-color: $bgc-header;
+
+        }
+
+    }
+
+    .nav-link {
+        color: whitesmoke;
+    }
+
+    .nav-link_active {
+
+        color: $rojo-larenga;
+        font-size: 1rem;
+    }
+
     /*====Inicio====*/
 
     .main-inicio {
@@ -191,12 +217,14 @@
 
         &__btn {
             text-align: center;
-            width: 2%;
+            width: 50%;
             border-radius: 3px;
         }
 
         svg {
-            margin-left: 40px;
+            width: 30%;
+            height: 50px;
+            margin-left: 0;
             margin-top: 5px;
             margin-right: 5px;
         }

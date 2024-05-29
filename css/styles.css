@@ -1,3 +1,4 @@
+/*====Variables====*/
 /* ======Estilos HEADER====== */
 body {
   margin: 0;
@@ -6,7 +7,7 @@ body {
 .header-container {
   display: flex;
   justify-content: space-between;
-  background-color: black;
+  background-color: #000000;
 }
 
 .header-container_logo img {
@@ -19,6 +20,17 @@ body {
 .header-container__buscador {
   margin-right: 25px;
   margin-top: 15px;
+}
+.header-container__buscador--nav {
+  padding: 0;
+  background-color: #DD3330;
+  margin-top: 2%;
+  border-radius: 15%;
+}
+
+.nav-link_active {
+  color: whitesmoke;
+  font-size: 1rem;
 }
 
 .navbar-toggler {
@@ -230,6 +242,17 @@ body {
 }
 
 /* ======Estilos Main Productos====== */
+.main_productos {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 100px);
+}
+
+.div-contenedor {
+  grid-column: 1/13;
+  grid-row: 1/20;
+}
+
 .accordion-item-div {
   display: flex;
   flex-direction: row;
@@ -298,7 +321,7 @@ nav {
   background-color: #DD3330;
 }
 nav a {
-  color: white;
+  color: whitesmoke;
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
@@ -425,7 +448,7 @@ nav a:hover {
 .footer-container {
   position: absolute;
   bottom: 1;
-  background-color: #2e2e2e;
+  background-color: #2E2E2E;
   width: 100%;
   height: 100px;
 }
@@ -526,12 +549,12 @@ nav a:hover {
   }
   /*====Productos====*/
   .accordion-item-div {
-    justify-content: space-around;
+    justify-content: flex-end;
   }
   .accordion-item-div__btn {
     text-align: center;
     margin: 15px;
-    width: 8%;
+    width: 10%;
     border-radius: 3px;
   }
   .accordion-item-div svg {
@@ -556,6 +579,20 @@ nav a:hover {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 991px) {
+  .navbar-toggler-icon {
+    background-color: whitesmoke;
+    border-radius: 20%;
+  }
+  .header-container__buscador--nav {
+    background-color: #000000;
+  }
+  .nav-link {
+    color: whitesmoke;
+  }
+  .nav-link_active {
+    color: #DD3330;
+    font-size: 1rem;
+  }
   /*====Inicio====*/
   .main-inicio {
     display: grid;
@@ -693,11 +730,13 @@ nav a:hover {
   }
   .accordion-item-div__btn {
     text-align: center;
-    width: 2%;
+    width: 50%;
     border-radius: 3px;
   }
   .accordion-item-div svg {
-    margin-left: 40px;
+    width: 30%;
+    height: 50px;
+    margin-left: 0;
     margin-top: 5px;
     margin-right: 5px;
   }
@@ -802,6 +841,7 @@ nav a:hover {
     margin: 0;
     padding-top: 10px;
     margin-top: 10px;
+    background-color: rgba(46, 46, 46, 0.7333333333);
   }
   .main_biografia div p {
     font-size: 0.5rem;
@@ -809,7 +849,7 @@ nav a:hover {
     color: white;
     margin: 0;
     margin-top: 60px;
-    background-color: rgba(0, 0, 0, 0.623);
+    background-color: rgba(0, 0, 0, 0.568);
     text-align: center;
   }
   .main_biografia div img {
@@ -889,15 +929,20 @@ nav a:hover {
   .accordion-item-div {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
   }
   .accordion-item-div__btn {
     text-align: center;
-    width: 2%;
-    border-radius: 3px;
+    width: 20%;
+    height: 30px;
+    border-radius: 2px;
+    font-size: 0.7rem;
+    margin: 0;
+    margin-top: 5px;
   }
   .accordion-item-div svg {
-    margin-left: 40px;
+    height: 25px;
+    margin-left: 20px;
     margin-top: 5px;
     margin-right: 1px;
   }
