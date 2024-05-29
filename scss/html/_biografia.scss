@@ -38,11 +38,8 @@
     }
 
     &_titulo1 {
-        grid-column: 1/13;
         grid-row: 1/4;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(3, 100px);
+        @include grid;
 
         h2 {
             grid-column: 1/10;
@@ -64,11 +61,9 @@
     }
 
     &_titulo2 {
-        grid-column: 1/13;
+
         grid-row: 4/7;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(3, 100px);
+        @include grid;
 
         h2 {
             grid-column: 4/13;
@@ -91,11 +86,8 @@
 
     &_titulo3 {
 
-        grid-column: 1/13;
         grid-row: 7/10;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(3, 100px);
+        @include grid;
 
         h2 {
             grid-column: 1/10;
