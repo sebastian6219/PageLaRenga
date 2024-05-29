@@ -48,7 +48,7 @@ body {
 .main-inicio__imgfondo {
   grid-column: 1/13;
   grid-row: 1/11;
-  background-image: url(../../img/corazon.jpeg);
+  background-image: url(../img/corazon.jpeg);
   background-size: cover;
 }
 .main-inicio__texto {
