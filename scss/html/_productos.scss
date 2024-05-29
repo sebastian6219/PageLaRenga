@@ -1,0 +1,49 @@
+/* ======Estilos Main Productos====== */
+
+.accordion-item-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+
+
+    &__btn {
+        text-align: center;
+        margin: 5px;
+        width: 10%;
+        border-radius: 3px;
+
+    }
+
+    svg {
+        margin-left: 15px;
+        margin-top: 5px;
+        margin-right: 5px;
+    }
+
+}
+
+.accordion-img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    div {
+
+        display: flex;
+        flex-direction: column;
+
+        q {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        button {
+            width: 150px;
+            height: 30px;
+            border-radius: 5px;
+            margin-left: 65px;
+        }
+    }
+
+}
