@@ -48,7 +48,7 @@ body {
 .main-inicio__imgfondo {
   grid-column: 1/13;
   grid-row: 1/11;
-  background-image: url(../img/corazon.jpeg);
+  background-image: url(../../img/corazon.jpeg);
   background-size: cover;
 }
 .main-inicio__texto {
@@ -506,7 +506,7 @@ nav a:hover {
     margin-right: 2%;
   }
   .main-inicio__texto p {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
   .main-inicio__imagen__img1 {
     grid-column: 1/5;
@@ -607,7 +607,7 @@ nav a:hover {
     margin-right: 2%;
   }
   .main-inicio__texto p {
-    font-size: 0.6rem;
+    font-size: 0.65rem;
   }
   .main-inicio__imagen__img1 {
     grid-column: 1/7;
